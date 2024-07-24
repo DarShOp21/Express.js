@@ -13,7 +13,7 @@ fs.readFile("hello.txt", "utf-8", (err, data) => {
     else console.log(data);
 })
 
-//use tp append a data in the file
+//use to append a data in the file
 fs.appendFile("hello.txt", " world", (err) => {
     if(err) console.log(err);
     else console.log("data appended");
@@ -40,7 +40,6 @@ fs.mkdir("lolo", (err) => {
 fs.readdir("lolo", {withFileTypes: true}, (err, files) => { //the withFileTypes: true will give symbolType if 1 than its file and if 2 its folder
     if(err) console.log(err);
     else console.log(files);
-
 })
 
 //delete a folder
